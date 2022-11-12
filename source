@@ -1,0 +1,12 @@
+function fire()
+wait(5)
+local ohInstance1 = game:GetService("Players")[_G.main]
+local ohString2 = "50000"
+
+game:GetService("ReplicatedStorage")["_CS.Events"].GiveMoneyToPlr:FireServer(ohInstance1, ohString2)
+local ohInstance1 = workspace.PlayerVehicles:FindFirstChildWhichIsA("Model")
+local ohNumber2 = 10000000000000
+
+game:GetService("ReplicatedStorage")["_CS.Events"].FillUpCar:FireServer(ohInstance1, ohNumber2)
+game:GetService("TeleportService"):Teleport(game.PlaceId, LocalPlayer)
+end
